@@ -1,0 +1,69 @@
+/*========variables=========*/
+
+:root {
+    /* colors */
+
+    --main-color:       rgb(53, 228, 157);
+    --font-color-dark:  rgb(56, 59, 59);
+    --font-color-light: rgb(235, 235, 235);
+
+    /*==========*/
+
+    /* fonts */
+
+    --title-font:       'Alfa Slab One', cursive;
+    --main-font:        'Gentium Book Basic', serif;
+
+    /*============*/
+}
+
+/*==========================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color:              var(--font-color);
+}
+
+/*===========NAVBAR==============*/
+
+.navigation {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+}
+
+    .navigation ul {
+        display:        inline-block;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color:          var(--font-color-dark);
+    }
+
+/*=====HEADER=======*/
+
+.cover {
+    height:             100vh;
+    width:              100vw;
+    background-image:   url("../assets/index-cover-photo.jpg");
+    background-repeat:  no-repeat;
+    background-size:    cover;
+    color:              var(--font-color-light);
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+}
+
+    .text-wrapper h1 {
+        font-family:    var(--title-font);
+        font-size:      60px;
+        text-transform: uppercase;
+    }
+
+    .text-wrapper h2 {
+        font-family:    var(--main-font);
+        font-size:      24px;
+    }
