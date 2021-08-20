@@ -30,8 +30,8 @@ html {
 /*===========NAVBAR==============*/
 
 .navigation {
-    text-transform: uppercase;
-    font-family: var(--main-font);
+    text-transform:     uppercase;
+    font-family:        var(--main-font);
 }
 
     .navigation ul {
