@@ -20,9 +20,147 @@
 /*==========================*/
 
 * {
-    box-sizing: border-box;
+    box-sizing:         border-box;
 }
 
 html {
     color:              var(--font-color);
+    font-family:        var(--main-font);
+}
+
+.container {
+    display:            grid;
+    grid-template-columns: .4fr 2fr;
+    grid-template-areas: 
+                        "header header"
+                        "navigation navigation"
+                        "sidebar main"
+                        "footer footer";
+}
+
+/*=============HEADER==============*/
+
+.header-wrapper {
+    grid-area:          header;
+    background-image:   url("../assets/index-cover-photo.jpg");
+    background-repeat:  no-repeat;
+    background-size:    cover;
+    filter:             grayscale(100%);
+    height:             100vh;
+    color:              var(--font-color-light);
+}
+
+    .text-wrapper {
+        height:         100%;
+        display:        flex;
+        justify-content:center;
+        align-items:    center;
+        flex-direction: column;
+    }
+
+        .text-wrapper li {
+            display:        inline-block;
+        }
+
+        .text-wrapper h1 {
+            font-family:    var(--title-font);
+            font-size:      6.25rem;
+        }
+
+        .text-wrapper h2 {
+            font-size:      1.875rem;
+            margin:         1.28rem 0 2.5rem;
+        }
+
+        .text-wrapper a {
+            text-decoration: none;
+            color:          var(--font-color-light);
+            font-family:    var(--main-font);
+            font-size:      1.28rem;
+            margin:         0 6.25rem;
+        }
+
+        .text-wrapper a:hover {
+            text-decoration: underline;
+            color: var(--main-color);
+        }
+
+
+/*==================================*/
+
+/*===========NAV====================*/
+
+.navigation-wrapper {
+    grid-area:          navigation;
+    display:            flex;
+    flex-direction:     column;
+    background-color:   var(--main-color);
+    text-transform:     uppercase;
+}
+    .navbar {
+        width:          60%;
+        padding:        1.25rem 0;
+        margin:         0 auto;
+    }
+
+    .logo {
+        float:          left;
+    }
+
+    .navbar li {
+        float:          right;
+        margin:         0 1.25rem; 
+    }
+
+    .menu-list {
+        height: 100%;
+    }
+
+        .menu-list a, .navigation-wrapper a {
+            color:          var(--font-color-dark);
+            text-decoration: none;
+            font-size:      1.375rem;
+        }
+
+        .menu-list li:hover {
+            text-decoration: underline;
+        }
+
+        .menu-list a:hover {
+            color: black;
+        }
+
+/*===================================*/
+
+/*============SIDEBAR================*/
+
+.sidebar-wrapper {
+    grid-area:          sidebar;
+    background-color:   var(--main-color);
+    text-transform: uppercase;
+}
+
+.sidebar-list {
+    margin: 0 50px;
+}
+
+.sidebar-list a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--font-color-dark);
+}
+
+.sidebar-list li {
+    border-bottom: 1px solid var(--font-color-dark);
+}
+
+/*===================================*/
+
+.main-wrapper {
+    grid-area:          main;
+}
+
+.footer-wrapper {
+    grid-area:          footer;
+    
 }
