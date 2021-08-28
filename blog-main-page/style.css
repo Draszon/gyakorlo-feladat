@@ -1,0 +1,83 @@
+/*========VARIABLES============*/
+
+:root {
+    
+    /* COLORS */
+    --purple-header:            hsla(265, 100%, 46%, 1);
+    --grey-background:          hsla(270, 9%, 96%, 1);
+    --white-background:         hsla(0, 0%, 100%, 1);
+    --dark-purble-background:   hsla(265, 53%, 14%, 1);
+
+    --grey-date-font: hsla(266, 9%, 70%, 1);
+    --black-font:     hsla(265, 53%, 14%, 1);
+
+    /* FONTS */
+    --nav-font:                 normal normal bold 12px/15px 'Montserrat';
+    --title-font:               normal normal bold 40px/50px 'Montserrat';
+    --article-font:             normal normal normal 20px/30px 'Montserrat';
+    --mini-article-title-font:  normal normal bold 12px/15px 'Montserrat';
+    --mini-article-font:        normal normal normal 14px/20px 'Montserrat';
+
+}
+
+/*=================================*/
+
+
+/*============BASE===============*/
+
+* {
+    box-sizing: border-box;
+    color:      black;
+}
+
+html { color: var(--black-font); }
+
+h1 { font: var(--title-font); }
+h2 { font: var(--mini-article-title-font); }
+
+a {
+    text-decoration:    none;
+    cursor:             pointer;
+}
+
+.container {
+    display:                grid;
+    grid-template-columns:  1fr;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+    header { background-color: var(--purple-header); grid-area:header; }
+    nav { background-color: var(--white-background); grid-area: nav; }
+    main { background-color: var(--grey-background); grid-area: main; }
+    footer { background-color: var(--dark-purble-background); grid-area: footer; }
+
+/*===================================*/
+
+/*==========HEADER==================*/
+
+header {
+    height:         7vh;
+    align-items:    center;
+    justify-items:  center;
+}
+    
+    .header-wrapper {
+        height: 100%;
+        width:  70%;
+        margin: 0 auto;
+    }
+
+    .sub-btn {
+        border:             2px solid white;
+        border-radius:      24px;
+        background-color:   white;
+        padding:            10px 40px;
+        font:               var(--nav-font);
+        text-transform:     uppercase;
+        color:              var(--purple-header);
+        letter-spacing:     2.4px;
+    }
