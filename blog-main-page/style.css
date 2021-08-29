@@ -31,6 +31,7 @@
 }
 
 html { color: var(--black-font); }
+body { background-color: var(--grey-background); }
 
 h1 { font: var(--title-font); }
 h2 { font: var(--mini-article-title-font); }
@@ -60,24 +61,113 @@ a {
 /*==========HEADER==================*/
 
 header {
-    height:         7vh;
-    align-items:    center;
-    justify-items:  center;
+    height: 7vh;
 }
     
     .header-wrapper {
         height: 100%;
-        width:  70%;
+    }
+
+        .header-content {
+            display:        flex;
+            flex-direction: row;
+            height:         100%;
+            align-items:    center;
+        }
+
+        .sub-btn,
+        .logo {   
+            float:          left;
+            margin-left:    18%;
+        }
+
+        .sub-btn {
+            font:               var(--mini-article-title-font);
+            color:              var(--purple-header);
+            text-transform:     uppercase;
+            background-color:   white;
+            letter-spacing:     2.4px;
+            padding:            10px 30px;
+            border:             1px solid white;
+            border-radius:      24px;
+        }
+
+/*=====================================*/
+
+/*==============NAV======================*/
+
+nav {
+    height: 7vh;
+}
+
+    .nav-content {
+        width:  55%;
+        height: 100%;
         margin: 0 auto;
     }
 
-    .sub-btn {
-        border:             2px solid white;
-        border-radius:      24px;
-        background-color:   white;
-        padding:            10px 40px;
-        font:               var(--nav-font);
-        text-transform:     uppercase;
-        color:              var(--purple-header);
-        letter-spacing:     2.4px;
+        .nav-content ul {
+            height:             100%;
+            display:            flex;
+            flex-direction:     row;
+            flex-wrap:          wrap;
+            justify-content:    space-between;
+            align-items:        center;
+        }
+
+        .nav-content a {
+            font:           var(--mini-article-title-font);
+            color:          var(--black-font);
+            text-transform: uppercase;
+            padding:        22px 0;
+        }
+
+        .nav-content a:hover {
+            color:          var(--purple-header);
+            border-bottom:  3px solid hsla(265, 100%, 46%, 1);
+        }
+
+/*=========================================*/
+
+/*=================ARTICLE===================*/
+
+.main {
+    background-color: var(--grey-background);
+    height: 100vh;
+    width: 100vw;
+}
+
+    .post-wrapper {
+        width: 64%;
+        margin: 0 auto;
+    }
+
+    .posts {
+        float: left;
+        width: 66%;
+        margin-right: 20px;
+    }
+
+    .featured-blogpost {
+        background: url("assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg");
+        background-size: cover;
+        border-radius: 15px;
+        padding: 60px;
+    }
+
+        .date {
+            font: var(--nav-font);
+        }
+        
+        .post-content {
+            font: var(--article-font);
+        }
+
+    .featured-blogpost a, h1, p {
+        color: white;
+    }
+
+    .side-menu {
+        float: right;
+        width: 32%;
     }
