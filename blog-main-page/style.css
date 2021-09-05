@@ -12,11 +12,11 @@
     --black-font:     hsla(265, 53%, 14%, 1);
 
     /* FONTS */
-    --nav-font:                 normal normal bold 0.75rem/0.9375rem 'Montserrat';
-    --title-font:               normal normal bold 2.5rem/3.125rem 'Montserrat';
-    --article-font:             normal normal normal 1.25rem/1.875rem 'Montserrat';
-    --mini-article-title-font:  normal normal bold 0.75rem/0.9375rem 'Montserrat';
-    --mini-article-font:        normal normal normal 0.875rem/1.25rem 'Montserrat';
+    --nav-font:                 normal normal bold 12px/15px 'Montserrat';
+    --title-font:               normal normal bold 40px/50px 'Montserrat';
+    --article-font:             normal normal normal 20px/30px 'Montserrat';
+    --mini-article-title-font:  normal normal bold 12px/15px 'Montserrat';
+    --mini-article-font:        normal normal normal 14px/20px 'Montserrat';
 
 }
 
@@ -138,10 +138,13 @@ nav {
     .post-wrapper {
         width:      64%;
         margin:     0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .posts {
-        float:          left;
+        /*float:          left;*/
         width:          66%;
         margin-right:   1.25rem;
     }
@@ -284,8 +287,12 @@ nav {
 
 
     .side-menu {
-        float: right;
+        /*float: right;*/
         width: 32%;
+    }
+
+    .side-menu-wrapper {
+        padding-top: 30px;
     }
 
         .side-title {
@@ -298,5 +305,47 @@ nav {
             border-radius: 0.9375rem 0.9375rem 0 0;
             text-transform: uppercase;
         }
+
+        .side-blog-samples {
+            background-color: white;
+        }
+
+        .side-blog-samples {
+            border-radius: 0 0 0.9375rem 0.9375rem;
+        }
+
+        .more-news {
+            border-top: 1px solid hsla(270, 9%, 96%, 1);
+            text-align: center;
+            color: hsla(266, 9%, 70%, 1);
+            font: var(--mini-article-title-font);
+            padding: 0.9375rem;
+            text-transform: uppercase
+            
+        }
+
+        .categorie-item {
+            text-transform: uppercase;
+            font: var(--mini-article-title-font);
+            color: hsla(265, 53%, 14%, 1);
+            text-align: left;
+            letter-spacing: 0.15rem;
+            padding: 0.9375rem 1.875rem;
+            border-bottom: 1px solid hsla(270, 9%, 96%, 1);
+        }
+
+.footer-wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: var(--mini-article-title-font);
+    color:hsla(266, 9%, 70%, 1);
+    letter-spacing: 2.4px;
+}
+
+    .footer-wrapper a {
+        color: var(--purple-header);
+    }
     
 
