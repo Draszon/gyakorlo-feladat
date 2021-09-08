@@ -1,0 +1,64 @@
+/*=========VARIABLES=======================*/
+
+:root {
+    --light-purple:             hsla(265, 100%, 46%, 1);
+    --dark-purple:              hsla(265, 53%, 14%, 1);
+    --light-grey-background:    hsla(270, 9%, 96%, 1);
+    --light-grey-font:          hsla(265, 53%, 14%, 1);
+    --footer-light-font:        hsla(266, 9%, 70%, 1);
+}
+
+/*==========================================*/
+
+/*===========GLOBAL=========================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color:   var(--light-grey-background);
+}
+
+.navigation { background-color: red; }
+.article { background-color: greenyellow; }
+.footer { background-color: gray; }
+
+/*===========================================*/
+
+/*==============NAV==========================*/
+
+.navigation {
+    width:              100vw;
+    background-color:   var(--light-purple);
+}
+
+    .nav-container {
+        width:              65%;
+        margin:             0 auto;
+        display:            flex;
+        flex-direction:     row;
+        flex-wrap:          nowrap;
+        justify-content:    space-between;
+    }
+
+        .menu {
+            display:        flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            
+        }
+
+        .menu li {
+            height: 100%;
+        }
+
+        .menu a {
+            color: var(--light-grey-background);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
