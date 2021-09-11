@@ -1,0 +1,48 @@
+/*===============VARIABLES==============*/
+
+:root {
+    --light-purple: hsla(265, 100%, 46%, 1);
+    --dark-purple: hsla(265, 53%, 14%, 1);
+    --light-grey: hsla(270, 9%, 96%, 1);
+    --dark-grey: hsla(265, 53%, 14%, 1);
+}
+
+/*=======================================*/
+
+/*=============GLOBAL=======================*/
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+    .content-wrapper {
+        background-color: var(--light-purple);
+        height: 100%;
+        width: 50%;
+    }
+
+        .logo {
+            margin: 15px 30px;
+        }
+
+    .login-wrapper {
+        background-image: url("assets/bailey-zindel-396398-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        filter: grayscale(100%);
+    }
+
+.footer {
+    height: 10vh;
+    background-color: var(--dark-purple);
+}
