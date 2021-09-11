@@ -116,27 +116,88 @@ body {
             margin-top: 30px;
         }
 
-        .article-inside p {
-            font-size:      14px;
-            margin:         10px 0px 30px;
-            line-height:    20px;
+        .left-article p {
+            font-size:      0.875rem;
+            margin:         0.625rem 0rem 1.875rem;
+            line-height:    1.25rem;
+        }
+
+        .telephone { margin-bottom: 0.625rem; }
+
+        .email { margin-bottom: 1.875rem; }
+
+        .img { border-radius: 0.9375rem; }
+
+        .title {
+            font-size:      2.5rem;
             font-weight:    bold;
         }
 
-        .telephone {
-            margin-bottom: 10px;
+        .contact-us {
+            font-size:      1.25rem;
+            line-height:    1.5;
+            margin: 10px 0;
         }
 
-        .email {
-            margin-bottom: 30px;
+        .input-type {
+            background-color:   var(--light-grey-background);
+            border:             none;
+            color:              hsla(266, 9%, 70%, 1);
+            width:              26.25rem;
+            margin-bottom:      0.9375rem;
+            padding-left:       1.5rem;
+            font-weight:        bold;
+        }
+        
+        .input-name {
+            border-bottom: 3px solid hsla(265, 100%, 46%, 1);
+        }
+
+        .input-name, .input-email { height: 3.125rem; }
+
+        .input-text { 
+            height:         9.375rem;
+            position:       relative;
+        }
+
+        .input-type:focus { outline: none; }
+
+        .submit-btn {
+            display:            block;
+            text-transform:     uppercase;
+            width:              420px;
+            height:             50px;
+            background-color:   var(--light-purple);
+            color:              white;
+            letter-spacing:     2.4px;
+            font-size:          12px;
+            font-weight:        bold;
+            border:             none;
+            border-radius: 24px;
         }
 
         .img {
-            border-radius: 15px;
+            margin: 0px 5px;
         }
+
 
 .footer {
     height:             10vh;
     width:              100%;
     background-color:   var(--dark-purple);
+    display:            flex;
+    flex-direction:     row;
+    flex-wrap:          no-wrap;
+    justify-content:    center;
+    align-items:        center;
+    font-family:        'Montserrat', sans-serif;
+    font-size:          12px;
+    letter-spacing:     2.4px;
+    font-weight:        bold;
+    text-transform:     uppercase;
+    
 }
+
+    .footer-purple { color: var(--light-purple); }
+
+    .footer-grey { color: hsla(266, 9%, 70%, 1); }
