@@ -113,7 +113,7 @@ body {
         }
 
         .address {
-            margin-top: 30px;
+            margin-top: 1.875rem;
         }
 
         .left-article p {
@@ -136,7 +136,7 @@ body {
         .contact-us {
             font-size:      1.25rem;
             line-height:    1.5;
-            margin: 10px 0;
+            margin:         0.625rem 0;
         }
 
         .input-type {
@@ -165,19 +165,22 @@ body {
         .submit-btn {
             display:            block;
             text-transform:     uppercase;
-            width:              420px;
-            height:             50px;
+            width:              26.25rem;
+            height:             3.125rem;
             background-color:   var(--light-purple);
             color:              white;
-            letter-spacing:     2.4px;
-            font-size:          12px;
+            letter-spacing:     0.15rem;
+            font-size:          0.75rem;
             font-weight:        bold;
             border:             none;
-            border-radius: 24px;
+            border-radius: 1.5rem;
         }
 
-        .img {
-            margin: 0px 5px;
+        .icon {
+            color: white;
+            background-color: var(--light-purple);
+            border-radius: 9999px;
+            padding: 10px;
         }
 
 
@@ -187,12 +190,12 @@ body {
     background-color:   var(--dark-purple);
     display:            flex;
     flex-direction:     row;
-    flex-wrap:          no-wrap;
+    flex-wrap:          nowrap;
     justify-content:    center;
     align-items:        center;
     font-family:        'Montserrat', sans-serif;
-    font-size:          12px;
-    letter-spacing:     2.4px;
+    font-size:          0.75rem;
+    letter-spacing:     0.15rem;
     font-weight:        bold;
     text-transform:     uppercase;
     
