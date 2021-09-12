@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/c300050d94.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Login page</title>
 </head>
@@ -23,13 +24,20 @@
             </div>
 
             <div class="content">
-                <div>
-                    <img src="assets/handshake-solid.svg" width="20px" alt="kézfogó">
+                <div class="content-text">
+                    <i class="icon fas fa-hands-helping"></i>
                     <p>Join the community.</p>
                 </div>
                 
-                <p>Explore new features.</p>
-                <p>Get incredible results.</p>
+                <div class="microscope content-text">
+                    <i class="icon fas fa-microscope"></i>
+                    <p>Explore new features.</p>
+                </div>
+
+                <div class="content-text">
+                    <i class="icon fas fa-laugh"></i>
+                    <p>Get incredible results.</p>
+                </div>
             </div>
 
         </div>
@@ -37,12 +45,23 @@
         <div class="login-wrapper">
             <div class="login">
                 
+                <h1 class="login-title">Some catchy call to action text.</h1>
+                <form action="#" class="login-form">
+                    <input type="text" value="Login/Email" class="login-email input-field">
+                    <input type="text" value="Password" class="input-field">
+                    <a class="forgot-passwd" href="#">Forgot password?</a>
+                    <input class="form-btn sign-up" type="submit" value="sign up">
+                    <input class="form-btn log-in" type="submit" value="log in">
+                </form>
+
             </div>
         </div>
 
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer-wrapper">
+        <p>© 2020 Copyright <a href="#">Brand Name</a> / Design by <a href="#">Student Name</a></p>
+    </footer>
 
 </div>
     

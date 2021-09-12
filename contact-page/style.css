@@ -173,14 +173,14 @@ body {
             font-size:          0.75rem;
             font-weight:        bold;
             border:             none;
-            border-radius: 1.5rem;
+            border-radius:      1.5rem;
         }
 
         .icon {
             color: white;
-            background-color: var(--light-purple);
-            border-radius: 9999px;
-            padding: 10px;
+            background-color:   var(--light-purple);
+            border-radius:      9999px;
+            padding:            0.625rem;
         }
 
 
