@@ -4,9 +4,13 @@
 
     /*COLORS*/
 
-    
+    --light-grey: hsla(270, 9%, 96%, 1);
+    --dark-grey: hsla(266, 9%, 70%, 1);
+    --light-purple: hsla(265, 100%, 46%, 1);
 
     /*FONTS*/
+
+    --main-font: 'Montserrat', sans-serif;
 
 }
 
@@ -14,4 +18,36 @@
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-family: var(--main-font);
+}
+
+.main-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+/*==================LEFT SIDE===================*/
+
+.left-container {
+    width: 20%;
+    height: 100%;
+    
+}
+
+
+
+/*===============================================*/
+
+/*==================RIGHT SIDE====================*/
+
+.right-container {
+    width: 80%;
+    height: 100%;
+    background-color: var(--light-grey);
 }
