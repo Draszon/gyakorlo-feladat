@@ -31,27 +31,120 @@
 /*==================LEFT SIDE===================*/
 
 .left-container {
-    width:      20%;
-    height:     100%;
-    font-family: var(--main-font);
+    width:          21%;
+    height:         100%;
+    font-family:    var(--main-font);
+    display:        flex;
+    flex-direction: column;
 }
 
-    .search-bar {
-        background-color: var(--light-grey);
-        border: none;
-        height: 50px;
-        width: 350px;
-        margin: 15px 0;
-        padding: 24px;
-        font-weight: bold;
-        font-size: 14px;
-        color: var(--dark-grey);
+    .sidebar-header {
+        width:      25rem;
+        height:     5rem;
+        display:    flex;
     }
 
-    .user-avatar {
-        width: 50px;
-        border-radius: 9999px;
+    .search-bar {
+        height:             3.125rem;
+        width:              23.125rem;
+        background-color:   var(--light-grey);
+        margin:             auto;
+    }
 
+    .submit-btn {
+        border: none;
+        cursor: pointer;
+        color:  var(--dark-grey);
+    }
+
+        .search-bar-real:focus { border-bottom-color: #6200ea; }
+
+    .search-bar-real {
+        width:              90%;
+        height:             100%;
+        background-color:   var(--light-grey);
+        border:             none;
+        padding-left:       1.5rem; 
+    }
+
+        .search-bar-real::placeholder {
+            font-size:      0.75rem;
+            font-weight:    bold;
+            color:          var(--dark-grey);
+        }
+
+
+    /*===============CONTACT LIST===================*/
+    
+    .contact-list-all {
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+    }
+
+        .contact-list-all a {
+            text-decoration: none;
+        }
+
+        .contact-list-all a:focus { border-left: 5px solid var(--light-purple); }
+
+        .contact-list-item {
+            height:         5rem;
+            width:          25rem;
+            display:        flex;
+            flex-direction: row;
+            flex-wrap:      nowrap;
+            align-items:    center;
+            padding:        0.9375rem;
+            border-top:     1px solid var(--light-grey);
+            border-bottom:  1px solid var(--light-grey);
+        }
+
+            .user-avatar {
+                width:          3.125rem;
+                height:         3.125rem;
+                object-fit:     cover;
+                border-radius:  50%;
+            }
+
+            .contact-name {
+                font-size:      0.75rem;
+                letter-spacing: 0.15rem;
+                color:          var(--light-purple);
+                text-transform: uppercase;
+                font-weight:    bold;
+                padding-left:   0.9375rem;
+            }
+
+            .contact-text {
+                font-size:  0.75rem;
+                color:      black;
+                padding:    0.3125rem 0 0 0.9375rem;
+            }
+
+    .add-new-btn {
+        height:             3.125rem;
+        width:              23.125rem;
+        background-color:   white;
+        border:             2px solid var(--light-purple);
+        border-radius:      1.5rem;
+        text-transform:     uppercase;
+        font-size:          0.75rem;
+        letter-spacing:     0.1531rem;
+        font-weight:        bold;
+        color:              var(--light-purple);
+        margin:             0.9375rem;
+    }
+
+    .add-new-btn a {
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
+        height:             100%;
+        width:              100%;
+        text-decoration:    none;
+        text-align:         center;
+        color:              var(--light-purple);
     }
 
 
@@ -61,7 +154,24 @@
 /*==================RIGHT SIDE====================*/
 
 .right-container {
-    width:              80%;
+    width:              79%;
     height:             100%;
     background-color:   var(--light-grey);
 }
+
+    .header {
+        height:             8.1716vh;
+        width:              100%;
+        display:            flex;
+        flex-direction:     row;
+        flex-wrap:          nowrap;
+        justify-content:    space-between;
+        align-items:        center;
+        background-color:   var(--light-purple);
+    }
+
+        .my-profile {
+            display:            flex;
+            flex-direction:     row;
+            align-items:        center;
+        }
