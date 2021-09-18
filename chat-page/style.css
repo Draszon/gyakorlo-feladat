@@ -28,6 +28,12 @@
     flex-direction: row;
 }
 
+.clearfix:after {
+    content:  "";
+    display:  table;
+    clear:    both;
+}
+
 /*==================LEFT SIDE===================*/
 
 .left-container {
@@ -153,7 +159,7 @@
 
 .right-container {
     width:              79%;
-    height:             85%;
+    height:             100%;
     background-color:   var(--light-grey);
     font-family:        var(--main-font);
     color:              white;
@@ -196,20 +202,24 @@
 
             .time-stamp {
                 color:              var(--dark-grey);
-                font-size:          12px;
-                letter-spacing:     2.4px;
+                font-size:          0.75rem;
+                letter-spacing:     0.15rem;
                 text-transform:     uppercase;
                 font-weight:        bold;
             }
 
             .time-stamp-left-space { 
-                margin-left: 60px;
-                margin-bottom: 5px;
+                margin-left: 3.75rem;
+                margin-bottom: 0.3125rem;
+            }
+
+            .timestamp-right {
+                margin-right: 3.75rem;
             }
 
             .user-avatar-chat {
                 float:          left;
-                margin-right:   10px;
+                margin-right:   0.625rem;
             }
 
             .partner-text {
@@ -219,10 +229,78 @@
                 margin:           0 0 1.1111vh 3.75vw;
                 background-color: #ffffff;
                 line-height:      2.2222vh;
-                font-size:        14px;
+                font-size:        0.875rem;
             }
-    
 
-    .message-type-area {
-        
-    }
+            .right-float { float: right; }
+
+            .left-float { float:left; }
+
+            .partner-text-right {
+                max-width:        30vw;
+                padding:          2.2222vh 1.25vw;
+                border-radius:    15px 15px 0 15px;
+                margin:           1.1111vh 0 0 0;
+                background-color: var(--dark-grey);
+                color:            white;
+                line-height:      2.2222vh;
+                font-size:        0.875rem;
+            }
+
+            .user-avatar-chat-right {
+                float:      right;
+                margin:     3.125rem 0.625rem 0 0.625rem;
+            }
+
+            .right-margin {
+                margin-right: 75px;
+            }
+
+            .positioning {
+                position: absolute;
+                right: 4vw;
+                bottom: 28.5vh;
+            }
+
+            .message-editor {
+                height:           15.5555vh;
+                padding:          2.2222vh 3.75vw 2.2222vh 1.25vw;
+                border-left:      .0625vw solid;
+                border-color:     #f4f3f5;
+                background-color: #ffffff;
+              }
+              
+                .message-editor__form { position: relative; }
+              
+                .message-editor__textarea {
+                  position:         absolute;
+                  width:            66.25vw;
+                  height:           11.1111vh;
+                  padding:          2.2222vh 0 1.4444vh 1.5vw;
+                  border:           0;
+                  border-bottom:    .3333vh solid;
+                  border-color:     transparent;
+                  margin-bottom:    1.6666vh;
+                  background-color: #f4f3f5;
+                  outline:          none;
+                }
+              
+                .message-editor__textarea:focus { border-bottom-color: #6200ea; }
+              
+                .message-editor__textarea::placeholder {
+                  font-weight: bold;
+                  opacity:     .25;
+                }
+              
+                .message-editor__attachment:visited { color: #211138; }
+              
+                .message-editor__send-message {
+                  position:       absolute;
+                  right:          0;
+                  margin-right:   0;
+                  width:          5.5555vh; /* [] */
+                  height:         5.5555vh; /* [] */
+                  border-radius:  50%; /* [] */
+                  text-align:     center;
+                }
+
